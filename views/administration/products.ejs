@@ -1,0 +1,67 @@
+<% include ../partials/head.ejs %>
+<% include ./partials/admin-header.ejs %>
+<% include ./partials/admin-primaryNavigation.ejs %>
+<main role="main" class="adminPage">
+	<h1><%= title %></h1>
+	<p><%= content %></p>
+	<a href="#" class="addButton" onclick="openForm()">Tilføj produkt</a>
+	<table>
+		<thead>
+			<tr>
+				<th>Redigér</th>
+				<th>Slet</th>
+				<th>Navn</th>
+				<th>Pris</th>
+				<th>Producent</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% results.forEach(result => { %>
+			<tr>
+				<td onclick="openUpdateForm()"><i class="fas fa-edit" onclick="openUpdateForm()"></i></td>
+				<td><i data-id="<%= result.id %>" data-category="products" class="fas fa-trash-alt"></i></td>
+				<td onclick="openUpdateForm()"><%= result.name %></td>
+				<td onclick="openUpdateForm()"><%= result.price %> DKK</td>
+				<td onclick="openUpdateForm()"><%= result.brand_name %></td>
+			</tr>
+			<% }); %>
+		</tbody>
+	</table>
+</main>
+<div id="addTo" class="addForm">
+	<a href="" onclick="closeForm()"><i class="fas fa-times"></i></a>
+	<h2>Tilføj produkt</h2>
+	<form action="" method="post">
+		<label for="name">Navn</label><input type="text" name="name" placeholder="Produktets navn">
+		<label for="price">Pris</label><input type="text" name="price" placeholder="Produktets pris, f.eks.: 122.50">
+		<label for="image">Billede</label><input type="text" name="image" placeholder="Billedets sti, f.eks.: billede.jpg">
+		<label for="description">Beskrivelse</label><textarea name="description" cols="30" rows="10" placeholder="Produktbeskrivelse"></textarea>
+		<label for="category">Kategori</label>
+		<div name="categories" id="category">
+
+		</div>
+		<label for="brands">Producent</label>
+		<div name="brands" id="brands">
+
+		</div>
+		<button type="submit">Gem produkt</button>
+	</form>
+</div>
+<div id="updateTo" class="updateForm">
+	<a href="" onclick="closeUpdateForm()"><i class="fas fa-times"></i></a>
+	<h2>Opdater produkt</h2>
+	<form action="" method="">
+		<label for="name">Navn</label><input type="text" name="name">
+		<label for="price">Pris</label><input type="text" name="price">
+		<label for="image">Billede</label><input type="text" name="image">
+		<label for="description">Beskrivelse</label><textarea name="description" cols="30" rows="10"></textarea>
+		<label for="category">Kategori</label>
+
+		<button type="submit">Gem ændringer</button>
+	</form>
+</div>
+<script src="/scripts/deleteButtons.js" defer></script>
+<script src="/scripts/updateBox.js" defer></script>
+<script src="/scripts/addBox.js" defer></script>
+<script src="/scripts/dynamicSelect.js"></script>
+<% include ../partials/after-footer.ejs %>

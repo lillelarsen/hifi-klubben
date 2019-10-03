@@ -1,0 +1,389 @@
+h1, h2 {
+    color: #917c78;
+}
+h1 {
+    font-size: 43px;
+    width: 2.6em;
+    text-align: center;
+    width: 100%;
+}
+h2 {
+    font-size: 2.25em;
+}
+p {
+    color: #545e56;
+    font-size: 1.75em;
+}
+button {
+    font-size: 1.1875em;
+}
+footer p {
+    font-size: 1.1875em;
+}
+/* Header content */
+.primaryNavigation img, 
+.primaryNavigation ul li:first-of-type,
+.adminPrimaryNavigation img, 
+.adminPrimaryNavigation ul li:first-of-type
+ {
+    display: block;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #545e56;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .adminsidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #999;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .adminsidenav ul {
+      list-style: none;
+  }
+  .adminsidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  .adminsidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+@media screen and (min-width: 30em) {
+    .primaryNavigation img, 
+    .primaryNavigation ul li:first-of-type,
+    .adminPrimaryNavigation img, 
+    .adminPrimaryNavigation ul li:first-of-type {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+}
+.primaryNavigation li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1875em;
+    color: #667761;
+    margin-right: 2vw;
+}
+.adminPrimaryNavigation li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1875em;
+    color: #fff;
+    margin-bottom: 0.3em;
+}
+.adminPrimaryNavigation li a:hover {
+    color: #333;
+}
+.adminHeaderLogout a:hover {
+    color: #999;
+}
+.primaryNavigation li:hover a {
+    background-color: #667761;
+    color: #fff;
+    padding: 0.3em 0.6em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.headerText a, 
+.adminHeaderText a,
+.adminHeaderLogout a, 
+.siteFooter p {
+    text-decoration: none;
+    color: white;
+}
+
+.searchBar input {
+    background-color: white;
+    border: 0.2em solid #667761;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 0.1em 0.6em;
+    font-family: 'Roboto', sans-serif;
+    color: #667761;
+    height: 2em;
+    width: 20vw;
+    max-width: 12em;
+}
+.adminSearchBar input {
+    background-color: white;
+    border: 0.2em solid #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 0.1em 0.6em;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    height: 2em;
+    width: 33vw;
+}
+.searchBar input::placeholder {
+    text-align: center;
+}
+.searchBar button {
+    background-color: white;
+    border: none;
+}
+
+.searchBar button img {
+    height: 2em;
+}
+.searchBar button:focus, 
+.searchBar input:focus, 
+.adminSearchBar input:focus {
+    outline: none;
+}
+/* Main content */
+.frontPage section p, .productInfo {
+    background-color: #eae1df;
+    padding: 1em 4em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    min-height: 2em;
+}
+.categories button, .contact form button {
+    border: none;
+    padding: 1em 2em;
+    color: white;
+    background-color: #545e56;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.categories button:focus {
+    outline: none;
+}
+.categories ul li {
+    padding: 0.5em;
+}
+.categories ul li:hover {
+    background-color: #fff;
+}
+.categories ul li a {
+    text-decoration: none;
+    color: white;
+}
+.categories ul li:hover a {
+    color: #667761;
+}
+.productsList ul li {
+    margin-top: 1em;
+}
+.productsList ul li:hover {
+    border: #667761 solid 1px;
+    border-radius: 15px;
+    color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.productsList ul li h2, .productsList ul li p {
+    padding: 0;
+    margin: 0;
+}
+.productsList ul li a {
+    text-decoration: none;
+    color: #917c78;
+}
+.productInfo a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2em 1em;
+    background-color: #667761;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.contact p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.contact .error {
+    color: red;
+}
+.contact form input, .contact form textarea {
+    background-color: white;
+    border: 0.2em solid #667761;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 0.1em 0.6em;
+    font-family: 'Roboto', sans-serif;
+    color: #667761;
+    min-height: 2em;
+    width: 95%;
+}
+.contact form p {
+    margin: 0.5em auto;
+}
+.contact form button {
+    align-self: flex-end;
+}
+.contact form input:focus, .contact form textarea:focus {
+    outline: none;
+}
+.product h1 {
+    grid-column: 1/-1;
+}
+.product img  {
+    width: 325px;
+}
+.loginMain form label {
+    display: block;
+    text-align: center;
+}
+
+.loginMain form button {
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.loginMain form button:focus {
+    outline: none;
+}
+/* admin */
+.adminPage h1,
+.adminPage p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.adminPage table td {
+    padding: 0;
+    cursor: pointer;
+}
+.adminPage table tbody tr:nth-child(odd) {
+    background: #999;
+}
+.adminPage th:nth-of-type(1),
+.adminPage td:nth-of-type(1),
+.adminPage th:nth-of-type(2),
+.adminPage td:nth-of-type(2){
+    width: 2em;
+    padding: 0 0.2em;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 40em) {
+    .adminPage table td {
+        padding-left: 0.5em;
+    }
+}
+.adminPage table tbody tr:hover {
+    background-color: #333333;
+    color: #fff;
+}
+.adminPage .fa-edit {
+    color: blue;
+    cursor: pointer;
+}
+.adminPage .fa-trash-alt {
+    color: red;
+    cursor: pointer;
+}
+.addForm form label,
+.addForm form button,
+.updateForm form label,
+.updateForm form button {
+    margin-top: 0.5em;
+}
+.addForm h2,
+.updateForm h2 {
+    padding: 0;
+    margin: 0;
+}
+.addForm i,
+.updateForm i {
+    margin-left: 95%;
+}
+.addForm a,
+.updateForm a {
+    text-decoration: none;
+    color: #333;
+}
+.addButton {
+    display: block;
+    text-decoration: none;
+    width: 10em;
+    height: 2.5em;
+    margin: 0.5em 10%;
+    text-align: center;
+    color: #fff;
+    box-shadow: #999 2px 4px;
+    padding: 0.7em 3em 0 3em;
+    background-color: green;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/* Footer content */
+.footerContent {
+    margin: 0.4em;
+}

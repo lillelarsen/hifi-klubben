@@ -1,0 +1,120 @@
+.primaryNavigation ul, .adminPrimaryNavigation ul {
+    display: none;
+}
+.adminSearchBar, .adminHeaderText, .adminHeaderLogout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.4em;
+}
+@media screen and (min-width: 30em) {
+    .primaryNavigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 1em 0;
+    }
+    .adminPrimaryNavigation ul {
+        display: block;
+        list-style: none;
+    }
+    .adminSearchBar, .adminHeaderText, .adminHeaderLogout {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+    .adminHeaderText {
+        align-items: flex-start;
+    }
+    .adminHeaderLogout {
+        align-items: flex-end;
+    }
+}
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+.searchBar form{
+    display: flex;
+    align-items: center;
+}
+.frontPage section, .products section {
+    text-align: center;
+}
+.products section {
+    display: flex;
+    width: 33%;
+    justify-content: space-around;
+}
+.products section ul {
+    list-style: none;
+    padding: 0;
+}
+.productsList ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.categories {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.categories ul {
+    color: white;
+    background-color: #545e56;
+    margin-top: 0;
+    padding: 1em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.categoryItems, .brandItems {
+    display: none;
+    position: absolute;
+    width: 10.2em;
+    top: 19em;
+    z-index: 1;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 2em;
+}
+.product, .productInfo  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (min-width: 40em) {
+    .product {
+        display: grid;
+        grid-template-columns: 325px 50%;
+        grid-gap: 1em;
+        margin-left: 3em;
+    }
+}
+.adminPage table td,
+.adminPage table th,
+.adminPage table {
+    border: solid thin; 
+    border-collapse: collapse;
+    text-align: left; 
+}
+.adminPage table {
+    width: 80%;
+    margin: 1em 0;
+    padding: 0;
+    border-spacing: 0;
+}

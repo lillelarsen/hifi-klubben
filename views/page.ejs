@@ -1,0 +1,21 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main" class="frontPage">
+	<section>
+		<h1><%= title %></h1>
+		<p><%= content %></p>
+	</section>
+	<div class="productsList">
+		<ul>
+		<% results.forEach(result => { %> 
+			<li>
+				<h2><a href="/produkter/<%= result.id %>"><%= result.name %></a></h2>
+				<a href="/produkter/<%= result.id %>"><img src="images/products/<%= result.image %>" alt="<%= result.name %>"></a>
+				<p><%= result.price %> DKK</p>
+			</li>
+		<% }); %>
+		</ul>
+	</div>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>

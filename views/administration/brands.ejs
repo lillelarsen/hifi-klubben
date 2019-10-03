@@ -1,0 +1,48 @@
+<% include ../partials/head.ejs %>
+<% include ./partials/admin-header.ejs %>
+<% include ./partials/admin-primaryNavigation.ejs %>
+<main role="main" class="adminPage">
+		<h1><%= title %></h1>
+		<p><%= content %></p>
+		<a href="#" class="addButton" onclick="openForm()">Tilføj Producent</a>
+		<table>
+			<thead>
+				<tr>
+					<th>Redigér</th>
+					<th>Slet</th>
+					<th>Producent</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% results.forEach(result => { %> 
+					<tr>
+						<td onclick="openUpdateForm()"><i class="fas fa-edit" onclick="openUpdateForm()"></i></td>
+						<td><i data-id="<%= result.id %>" data-category="brands" class="fas fa-trash-alt"></i></td>
+						<td onclick="openUpdateForm()"><%= result.name %></td>
+					</tr>
+				<% }); %>
+			</tbody>
+		</table>
+</main>
+<!-- add-brand form -->
+<div id="addTo" class="addForm">
+	<a href="" onclick="closeForm()"><i class="fas fa-times"></i></a>
+	<h2>Tilføj Producent</h2>
+	<form action="/admin/brands" method="post">
+		<label for="brandName">Producent navn</label><input type="text" name="name" id="brandName" placeholder="Vælg et navn til Producenten">
+		<button type="submit">Gem Producenten</button>
+	</form>
+</div>
+<!-- update-brand form -->
+<div id="updateTo" class="updateForm">
+	<a href="" onclick="closeUpdateForm()"><i class="fas fa-times"></i></a>
+	<h2>Opdater Producent</h2>
+	<form action="" method="post">
+		<label for="brandName">Producent navn</label><input type="text" name="name" id="brandName">
+		<button type="submit">Gem ændringer</button>
+	</form>
+</div>
+<script src="/scripts/deleteButtons.js" defer></script>
+<script src="/scripts/updateBox.js" defer></script>
+<script src="/scripts/addBox.js" defer></script>
+<% include ../partials/after-footer.ejs %>

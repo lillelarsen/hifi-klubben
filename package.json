@@ -1,0 +1,43 @@
+{
+  "name": "hifi-klubben-sleran",
+  "version": "1.0.0",
+  "description": "Projekt HIFI klubben",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r dotenv/config server.js dotenv_config_path=./.env",
+    "dev": "run-script-os",
+    "dev:win32": "set DEBUG=kodebase & nodemon -r dotenv/config server.js dotenv_config_path=./.env",
+    "dev:linux": "DEBUG=kodebase nodemon -r dotenv/config server.js dotenv_config_path=./.env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rts-cmk-wi83/hifi-klubben-sleran.git"
+  },
+  "keywords": [
+    "hifi",
+    "webintegrator",
+    "praktisk",
+    "web"
+  ],
+  "author": "Steffen Larsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rts-cmk-wi83/hifi-klubben-sleran/issues"
+  },
+  "homepage": "https://github.com/rts-cmk-wi83/hifi-klubben-sleran#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "debug": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "run-script-os": "^1.0.3"
+  }
+}

@@ -1,0 +1,63 @@
+.headerText {
+    height: 62px;
+}
+.products {
+    flex-direction: column;
+    align-items: center;
+}
+.adminSiteHeader {
+    background-color: #333;
+    color: white;
+    grid-column: 1/-1;
+    display: flex;
+    padding: 0.5em;
+}
+.adminPrimaryNavigation {
+    background-color: #999;
+    grid-column: 1/2;
+}
+
+.loginMain form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border: radius 15px;
+    background: #667761;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+#addTo,
+#updateTo {
+    display: none;
+}
+.addForm,
+.updateForm {
+    width: 18.75em;
+    padding: 2em 1em;
+    background-color: white;
+    border: #999 solid 1px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 5px 10px #333;
+    position: fixed;
+    top: 5%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 9;
+}
+
+.addForm form,
+.updateForm form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
